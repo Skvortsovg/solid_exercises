@@ -2,29 +2,29 @@ package com.directi.training.srp.exercise;
 
 public class Car
 {
-    private final String _id;
-    private final String _model;
-    private final String _brand;
+    private final String id;
+    private final String model;
+    private final String brand;
 
     public Car(String id, String model, String brand)
     {
-        _id = id;
-        _model = model;
-        _brand = brand;
+        this.id = id;
+        this.model = model;
+        this.brand = brand;
     }
 
     public String getId()
     {
-        return _id;
+        return this.id;
     }
 
     public String getModel()
     {
-        return _model;
+        return this.model;
     }
 
     public String getBrand()
     {
-        return _brand;
+        return this.brand;
     }
 }
