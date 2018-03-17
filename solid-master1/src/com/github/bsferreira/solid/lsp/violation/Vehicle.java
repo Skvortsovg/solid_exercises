@@ -6,6 +6,7 @@ package com.github.bsferreira.solid.lsp.violation;
 public class Vehicle {
 
     private Gear gear;
+    private boolean isMoving;
 
     public Gear getGear() {
         return gear;
@@ -13,6 +14,18 @@ public class Vehicle {
 
     public void changeGear(final Gear gear) {
         this.gear = gear;
+    }
+
+    public void move() {
+        isMoving = true;
+    }
+
+    public void stop() {
+        isMoving = false;
+    }
+
+    public booleas isMoving() {
+        return isMoving;
     }
 
 }
