@@ -1,25 +1,15 @@
 /**
  * Created by mrk on 4/7/14.
  */
-public class Greeter {
-    String formality;
 
-    public String greet() {
-        if (this.formality == "formal") {
-            return "Good evening, sir.";
-        }
-        else if (this.formality == "casual") {
-            return "Sup bro?";
-        }
-        else if (this.formality == "intimate") {
-            return "Hello Darling!";
-        }
-        else {
-            return "Hello.";
-        }
+public class Greeter {
+    private Personality personality;
+
+    public Greeter(Personality personality) {
+        this.personality = personality;
     }
 
-    public void setFormality(String formality) {
-        this.formality = formality;
+    public String greet() {
+        return this.personality.greet()
     }
 }
