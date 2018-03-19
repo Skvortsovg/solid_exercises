@@ -3,7 +3,7 @@ package com.github.bsferreira.solid.isp.violation;
 /**
  * Created by bsferreira on 10-04-2016.
  */
-public class Car extends Vehicle {
+public class Car extends Vehicle implements IRadioSwitch {
 
     private boolean radioOn;
 
@@ -21,13 +21,4 @@ public class Car extends Vehicle {
         radioOn = false;
     }
 
-    @Override
-    public void turnCameraOn() {
-        // nothing to do here
-    }
-
-    @Override
-    public void turnCameraOff() {
-        // nothing to do here
-    }
 }

@@ -3,7 +3,7 @@ package com.github.bsferreira.solid.isp.violation;
 /**
  * Created by bsferreira on 10-04-2016.
  */
-public class Drone extends Vehicle {
+public class Drone extends Vehicle implements ICameraSwitch {
 
     private boolean cameraOn;
 
@@ -21,13 +21,4 @@ public class Drone extends Vehicle {
         cameraOn = false;
     }
 
-    @Override
-    public void turnRadioOn() {
-        // nothing to do here
-    }
-
-    @Override
-    public void turnRadioOff() {
-        // nothing to do here
-    }
 }

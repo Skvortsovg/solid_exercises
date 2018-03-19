@@ -1,7 +1,10 @@
 /**
  * Created by mrk on 4/8/14.
  */
-public class Studio extends Apartment {
+public class Studio {
+    public int numberOfBedrooms;
+    public int squareFootage;
+
     public Studio() {
         this.numberOfBedrooms = 0;
     }

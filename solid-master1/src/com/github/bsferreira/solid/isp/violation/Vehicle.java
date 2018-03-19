@@ -3,7 +3,7 @@ package com.github.bsferreira.solid.isp.violation;
 /**
  * Created by bsferreira on 10-04-2016.
  */
-public abstract class Vehicle implements Switches {
+public abstract class Vehicle implements IEngineSwitch {
 
     private boolean engineRunning;
 
