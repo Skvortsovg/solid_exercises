@@ -1,7 +1,7 @@
 /**
  * Created by mrk on 4/7/14.
  */
-public class Eagle implements Bird {
+public class Eagle implements IFlySkill, IMoltSkill {
     String currentLocation;
     int numberOfFeathers;
 
